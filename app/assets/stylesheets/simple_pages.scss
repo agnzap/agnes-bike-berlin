@@ -1,3 +1,51 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*** General settings ***/
+body {
+  font-family: 'Source Code Pro', monospace;
+  background-color: #FFFFFF;
+  color: #193154;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  padding: 15px;
+}
+
+/*** Navigation bar ***/
+.navbar {
+  background-color: #FBEFF3;
+}
+
+.nav-pills {
+  padding: 5px;
+}
+
+.navbar a {
+  color: #193154;
+}
+
+.nav li a:hover {
+  background-color: #F5D4DE;
+}
+
+.bike-main {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/*** Footer ***/
+
+footer {
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #FBEFF3;
+}
