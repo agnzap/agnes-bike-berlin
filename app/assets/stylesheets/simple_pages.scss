@@ -9,16 +9,20 @@ body {
   color: #193154;
 }
 
-h1,
-h2,
-h3 {
-  text-align: center;
+.header {
   padding: 15px;
+  text-align: center;
 }
 
 p {
   text-align: center;
 }
+
+.row {
+  padding: 15px;
+  margin: 0 auto;
+}
+
 
 /*** Navigation bar ***/
 .navbar {
@@ -37,17 +41,50 @@ p {
   background-color: #F5D4DE;
 }
 
-.bike-main {
-  margin: 0 auto;
-  padding: 20px;
+
+/*** Main page - products ***/
+.main-products {
+  padding: 10px;
+  display: block;
+  position: relative;
+  vertical-align: middle;
+  max-width: 100%;
+  border: 10px;
 }
+
+@media (max-width: 767px) {
+  .main-products {
+    margin-left: 20%;
+  }
+}
+
+.row button {
+    margin: 5%;
+}
+
+.btn-default {
+  color: #193154;
+  background-color: #FBEFF3;
+  border-color: #F5D4DE;
+}
+
+.btn-default:hover {
+  background-color: #F5D4DE;
+  border-color: #F5D4DE;
+}
+
+.product-description {
+  text-align: justify;
+}
+
 
 /*** Footer ***/
 
 footer {
+  margin-top: 100px;
   padding-top: 10px;
   font-weight: bold;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: #FBEFF3;
