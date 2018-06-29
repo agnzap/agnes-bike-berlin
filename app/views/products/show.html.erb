@@ -15,5 +15,15 @@
   <%= @product.image_url %>
 </p>
 
+<p>
+  <strong>colour:</strong>
+  <%= @product.colour %>
+</p>
+
+<p>
+  <strong>price:</strong>
+  <%= @product.price %>
+</p>
+
 <%= link_to 'edit', edit_product_path(@product) %> |
 <%= link_to 'back', products_path %>
