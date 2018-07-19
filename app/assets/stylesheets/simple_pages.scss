@@ -80,6 +80,37 @@ p {
   text-align: justify;
 }
 
+/*** Carousel ***/
+
+#carousel-example-generic {
+  height: 240px;
+}
+
+.carousel-indicators li {
+  background-color: #f9acc3;
+  margin-top: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: #193154;
+}
+
+.carousel-caption {
+  margin-left: 40%;
+  color: #193154;
+}
+
+.carousel-control.left {
+  background-image: linear-gradient(to right,rgba(232,198,225,.33) 0,rgba(251,240,243,1) 100%);
+}
+
+.carousel-control.right {
+  background-image: linear-gradient(to left,rgba(232,198,225,.33) 0,rgba(251,240,243,1) 100%);
+}
+
+.carousel-img {
+  margin-left: 30%;
+}
 
 /*** Footer ***/
 
