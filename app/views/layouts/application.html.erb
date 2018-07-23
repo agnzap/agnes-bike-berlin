@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -16,14 +17,27 @@
   </head>
 
   <body>
-    <nav class="navbar">
-      <ul class="nav nav-pills">
-        <li><%= link_to "home", root_path %></li>
-        <li><%= link_to "about", simple_pages_about_path %></li>
-        <li><%= link_to "contact", simple_pages_contact_path %></li>
-        <li><%= link_to "products", products_path %></li>
-      </ul>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bikesNav">
+                <span class="icon-bar glyphicon glyphicon-list"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <%= link_to "Bike Berlin", root_path, id: "brand-logo" %>
+          </div> <!-- end header -->
+          <div class="collapse navbar-collapse navbar-right" id="bikesNav">
+          <ul class="nav navbar-nav">
+            <li><%= link_to "home", root_path %></li>
+            <li><%= link_to "products", products_path %></li>
+            <li><%= link_to "about", simple_pages_about_path %></li>
+            <li><%= link_to "contact", simple_pages_contact_path %></li>
+          </ul>
+          </div>
+        </div> <!-- end container -->
     </nav>
+
 
     <%= yield %>
 

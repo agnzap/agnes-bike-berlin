@@ -12,12 +12,24 @@ body {
 }
 
 .header {
-  padding: 15px;
+  padding: 35px;
   text-align: center;
+  font-size: 2em;
+}
+
+.container-fluid {
+  margin-top: 10px;
 }
 
 p {
-  padding-top: 5px;
+  padding: 5px;
+}
+
+.main-intro {
+  text-align: center;
+  padding: 5px;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .row {
@@ -31,6 +43,19 @@ p {
   background-color: #FBEFF3;
 }
 
+.navbar-toggle {
+  background-color: #F4D4DF;
+}
+
+#brand-logo {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.5em;
+  line-height: 40px;
+}
+
+.navbar-brand a:hover {
+  background-color: #FBEFF3;
+}
 
 .nav-pills {
   padding: 5px;
@@ -42,6 +67,7 @@ p {
 
 .nav li a:hover {
   background-color: #F5D4DE;
+  padding: 10px;
 }
 
 
@@ -83,7 +109,8 @@ p {
 /*** Carousel ***/
 
 #carousel-example-generic {
-  height: 240px;
+  height: 300px;
+  margin-top: 61px;
 }
 
 .carousel-indicators li {
@@ -96,7 +123,7 @@ p {
 }
 
 .carousel-caption {
-  margin-left: 40%;
+  margin-left: 300px;
   color: #193154;
 }
 
@@ -121,4 +148,10 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: #FBEFF3;
+}
+
+/*** Contact & about page ***/
+.contact, .about {
+  padding-top: 20px;
+  text-align: center;
 }
