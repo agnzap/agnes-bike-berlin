@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AgnesApp</title>
+    <title>bike berlin</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -27,22 +27,22 @@
             </button>
             <%= link_to "Bike Berlin", root_path, id: "brand-logo" %>
           </div> <!-- end header -->
-          <div class="collapse navbar-collapse navbar-left" id="bikesNav">
-            <ul class="nav navbar-nav">
+          <div class="collapse navbar-collapse" id="bikesNav">
+            <ul class="nav navbar-nav navbar-left">
               <li><%= link_to "home", root_path %></li>
               <li><%= link_to "products", products_path %></li>
               <li><%= link_to "about", simple_pages_about_path %></li>
               <li><%= link_to "contact", simple_pages_contact_path %></li>
               <li><%= link_to "orders", orders_path %></li>
             </ul>
-          </div>
           <div class="navbar-form navbar-right">
               <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
                 <%= form.text_field :q, id: 'q', value: params[:q] %>
                 <%= form.submit 'search', class: 'btn btn-default' %>
               <% end %>
-            </div>
-        </div> <!-- end container -->
+          </div>
+        </div>
+      </div> <!-- end container -->
     </nav>
 
 
