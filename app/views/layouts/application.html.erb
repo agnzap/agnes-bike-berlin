@@ -36,14 +36,12 @@
               <li><%= link_to "orders", orders_path %></li>
             </ul>
           </div>
-          <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
+          <div class="navbar-form navbar-right">
               <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
                 <%= form.text_field :q, id: 'q', value: params[:q] %>
                 <%= form.submit 'search', class: 'btn btn-default' %>
               <% end %>
             </div>
-          </form>
         </div> <!-- end container -->
     </nav>
 
