@@ -9,6 +9,7 @@
     <div class="carousel-inner">
       <% @products.each do |product| %>
       <div class="item<%= " active" if product == @products.first %>">
+          <br>
           <%= image_tag(product.image_url, class: "carousel-img") %>
 
           <div class="carousel-caption d-none d-md-block">
@@ -31,7 +32,7 @@
 
 </div>
 
-<div class="main-intro">
+<div class="container">
   <h3> welcome to bike berlin</h3>
   looking for a convenient way to move around the city?<br>
   we’ve got you covered!<br>

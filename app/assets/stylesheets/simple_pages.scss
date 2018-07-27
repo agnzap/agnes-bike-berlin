@@ -11,6 +11,12 @@ body {
   margin-right: 0;
 }
 
+.container {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
 .header {
   padding: 35px;
   text-align: center;
@@ -19,17 +25,6 @@ body {
 
 .container-fluid {
   margin-top: 10px;
-}
-
-p {
-  padding: 5px;
-}
-
-.main-intro {
-  text-align: center;
-  padding: 5px;
-  width: 60%;
-  margin: 0 auto;
 }
 
 .row {
@@ -53,6 +48,10 @@ p {
   line-height: 40px;
 }
 
+#login-btn {
+  font-weight: 800;
+}
+
 .navbar-brand a:hover {
   background-color: #FBEFF3;
 }
@@ -71,6 +70,14 @@ p {
 }
 
 
+/*** Signup and login alerts ***/
+.notice {
+  padding-top: 15px;
+  padding-left: 3px;
+  font-style: italic;
+  color: #ECB0C2;
+}
+
 /*** Main page - products ***/
 .main-products {
   padding: 10px;
@@ -86,7 +93,6 @@ p {
     margin-left: 20%;
   }
 }
-
 
 .btn-default {
   color: #193154;
@@ -107,12 +113,12 @@ p {
 
 #carousel-example-generic {
   height: 300px;
-  margin-top: 61px;
+  margin-top: 20px;
 }
 
 .carousel-indicators li {
   background-color: #f9acc3;
-  margin-top: 50%;
+  margin-top: 5%;
 }
 
 .carousel-indicators .active {
@@ -147,13 +153,6 @@ footer {
   background-color: #FBEFF3;
 }
 
-/*** Contact & about page ***/
-.contact, .about {
-  padding-top: 20px;
-  text-align: center;
-  width: 50%;
-  margin: 0 auto;
-}
 
 .img-responsive {
   margin: 0 auto;

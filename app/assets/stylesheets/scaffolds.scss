@@ -8,12 +8,6 @@ body {
   line-height: 20px;
 }
 
-p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-}
-
 pre {
   background-color: #eee;
   padding: 10px;
@@ -24,6 +18,7 @@ a {
   color: #193154;
   background-color: #FBEFF3;
   padding: 5px;
+  display: inline-grid;
   font-family: 'Source Code Pro', monospace;
 
   &:visited {

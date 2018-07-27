@@ -17,6 +17,7 @@
   </head>
 
   <body>
+    <!-- alerts for signing in -->
     <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -35,11 +36,30 @@
               <li><%= link_to "contact", simple_pages_contact_path %></li>
               <li><%= link_to "orders", orders_path %></li>
             </ul>
+            <ul class="nav navbar-nav">
+              <% if user_signed_in? %>
+              <li class="nav-item">
+                <%= link_to('log out', destroy_user_session_path, method: :delete, id: "login-btn") %>
+              </li>
+              <% else %>
+              <li class="nav-item">
+                <%= link_to('log in', new_user_session_path, id: "login-btn") %>
+              </li>
+              <% end %>
+              <li class="nav-item">
+                <p class="notice"><%= notice %></p>
+              </li>
+              <li class="nav-item">
+                <p class="alert"><%= alert %></p>
+              </li>
+            </ul>
+
           <div class="navbar-form navbar-right">
               <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
                 <%= form.text_field :q, id: 'q', value: params[:q] %>
                 <%= form.submit 'search', class: 'btn btn-default' %>
               <% end %>
+
           </div>
         </div>
       </div> <!-- end container -->

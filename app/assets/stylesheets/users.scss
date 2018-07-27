@@ -1,0 +1,12 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.user-buttons a {
+  background-color: #FFFFFF;
+  
+  &:hover {
+    color: #193154;
+    background-color: #F5D4DE;
+    text-decoration: none;
+  }
+}
