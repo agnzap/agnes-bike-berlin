@@ -71,11 +71,11 @@ body {
 
 
 /*** Signup and login alerts ***/
-.notice {
-  padding-top: 15px;
-  padding-left: 3px;
-  font-style: italic;
-  color: #ECB0C2;
+.alert, .alert-success {
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 80px;
+
 }
 
 /*** Main page - products ***/
@@ -113,7 +113,7 @@ body {
 
 #carousel-example-generic {
   height: 300px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .carousel-indicators li {

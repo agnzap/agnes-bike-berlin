@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <!-- alerts for signing in -->
+
     <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -46,12 +46,6 @@
                 <%= link_to('log in', new_user_session_path, id: "login-btn") %>
               </li>
               <% end %>
-              <li class="nav-item">
-                <p class="notice"><%= notice %></p>
-              </li>
-              <li class="nav-item">
-                <p class="alert"><%= alert %></p>
-              </li>
             </ul>
 
           <div class="navbar-form navbar-right">
@@ -64,7 +58,13 @@
         </div>
       </div> <!-- end container -->
     </nav>
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
 
+    <% if alert %>
+      <p class="alert alert-warning"><%= alert %></p>
+    <% end %>
 
     <%= yield %>
 
