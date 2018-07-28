@@ -11,7 +11,7 @@ body {
   margin-right: 0;
 }
 
-.container {
+.wrapper {
   text-align: center;
   width: 60%;
   margin: 0 auto;
@@ -27,9 +27,26 @@ body {
   margin-top: 10px;
 }
 
+.container {
+  padding-top: 30px;
+}
+
 .row {
-  padding: 15px;
   margin: 0 auto;
+}
+
+.user-buttons a {
+  background-color: #FFFFFF;
+
+  &:hover {
+    color: #193154;
+    background-color: #F5D4DE;
+    text-decoration: none;
+  }
+}
+
+.user-buttons {
+  text-align: center;
 }
 
 
@@ -126,7 +143,7 @@ body {
 }
 
 .carousel-caption {
-  margin-left: 300px;
+  margin-left: 40%;
   color: #193154;
 }
 
@@ -142,6 +159,7 @@ body {
   margin-left: 30%;
 }
 
+
 /*** Footer ***/
 
 footer {
@@ -152,7 +170,6 @@ footer {
   width: 100%;
   background-color: #FBEFF3;
 }
-
 
 .img-responsive {
   margin: 0 auto;
