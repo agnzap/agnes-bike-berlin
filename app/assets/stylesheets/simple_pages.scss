@@ -34,6 +34,7 @@ body {
 
 
 /*** Navigation bar ***/
+
 .navbar {
   background-color: #FBEFF3;
 }
@@ -71,11 +72,10 @@ body {
 
 
 /*** Signup and login alerts ***/
-.notice {
-  padding-top: 15px;
-  padding-left: 3px;
-  font-style: italic;
-  color: #ECB0C2;
+.alert, .alert-success {
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 80px;
 }
 
 /*** Main page - products ***/
