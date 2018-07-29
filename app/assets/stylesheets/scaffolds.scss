@@ -58,16 +58,15 @@ div {
 #error_explanation {
   width: 450px;
   border: 2px solid red;
-  padding: 7px 7px 0;
-  margin-bottom: 20px;
+  margin: 0 auto;
   background-color: #f0f0f0;
 
   h2 {
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     padding: 5px 5px 5px 15px;
     font-size: 12px;
-    margin: -7px -7px 0;
+    margin: 0 auto;
     background-color: #c00;
     color: #fff;
   }

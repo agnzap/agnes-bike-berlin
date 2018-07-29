@@ -34,4 +34,7 @@
   </div><!-- end row-->
       <%= render 'new_comment' %>
       <%= render 'comments' %>
+  <div class="user-buttons">
+      <%= will_paginate @comments %>
+  </div>
 </div><!--end container-->
