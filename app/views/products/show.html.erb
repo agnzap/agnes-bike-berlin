@@ -22,20 +22,16 @@
       </p>
 
       <p>
-        <b>Highest rating:</b>
-        <%= @product.highest_rating_comment.try(:rating) %>
-      </p>
-
-      <p>
-        <b>Lowest rating:</b>
-        <%= @product.lowest_rating_comment.try(:rating) %>
+        <b>Average Rating:</b>
+        <p class="rated" data-score="<%= @product.average_rating %>"></p>
       </p>
 
       <div class="user-buttons">
         <%= link_to 'edit', edit_product_path(@product) %> |
         <%= link_to 'back', products_path %>
       </div>
-
     </div>
   </div><!-- end row-->
+      <%= render 'new_comment' %>
+      <%= render 'comments' %>
 </div><!--end container-->
