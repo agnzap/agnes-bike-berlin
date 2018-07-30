@@ -2,6 +2,7 @@ class Product < ApplicationRecord
   has_many :orders
   has_many :comments
   validates :name, presence: true
+  validates :image_url, format: {with: /\.(png|jpg)\Z/i}
 
   def self.search(search_term)
     if Rails.env.development?
