@@ -41,6 +41,8 @@ p {
   transform: scale(1.1);
 }
 
-.thumbnail a img {
-  margin-left: 50px;
+@media (min-width: 800px) {
+  .thumbnail a img {
+    margin-left: 50px;
+  }
 }
