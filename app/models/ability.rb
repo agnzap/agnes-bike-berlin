@@ -6,8 +6,9 @@ class Ability
 
      if user.admin?
        can :manage, :all
+
      else
-       can :manage, User, id: user.id # restriction, users can only manage themselves
+       can :manage, User, id: user.id # restriction, users can only manage themselves and their comments
      end
   end
 end
