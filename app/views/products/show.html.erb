@@ -27,6 +27,13 @@
       </p>
 
       <div class="user-buttons">
+      <%= form_with(url: '/payments/create') do |form| %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
+    </div>
+
+
+      <div class="user-buttons">
         <%= link_to 'edit', edit_product_path(@product) %> |
         <%= link_to 'back', products_path %>
       </div>

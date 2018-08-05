@@ -67,3 +67,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'cancancan', '~> 2.0'
 gem 'devise'
 gem 'will_paginate', '~> 3.1.1'
+gem 'stripe'
