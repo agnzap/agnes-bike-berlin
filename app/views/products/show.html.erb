@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-sm-6">
-      <%= image_tag(@product.image_url, class: "img-responsive") %>
+      <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.product_image.url") %>
     </div>
     <div class="col-md-6 col-sm-6">
       <h3><%= @product.name %></h3>
