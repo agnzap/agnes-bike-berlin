@@ -4,6 +4,7 @@
       <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.product_image.url") %>
     </div>
     <div class="col-md-6 col-sm-6">
+      <% cache @product do %>
       <h3><%= @product.name %></h3>
 
       <p>
@@ -20,7 +21,7 @@
         <b>price:</b>
         €<%= @product.price %>
       </p>
-
+      <% end %>
       <p>
         <b>Average Rating:</b>
         <p class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></p>
