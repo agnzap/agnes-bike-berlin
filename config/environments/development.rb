@@ -55,6 +55,9 @@ Rails.application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+  # Prevents the app from crashing if invalid image_url provided
+  config.assets.unknown_asset_fallback = true
+
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 

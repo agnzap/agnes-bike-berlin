@@ -1,8 +1,10 @@
 <h1 class="heading">Products</h1>
 
+<% if (signed_in? && current_user.admin?) %>
 <p>
   <%= link_to 'add new product', new_product_path %>
 </p>
+<% end %>
 
   <div class="container-fluid">
   	<div class="row">
