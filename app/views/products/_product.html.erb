@@ -1,22 +1,20 @@
 <% cache product do %>
   <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-    <div class="row">
+    <div class="caption">
       <div class="thumbnail grow">
         <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
         <div class="caption">
           <h3><strong><%= product.name %></strong></h3>
           <p><%= product.description %></p>
-          <p class="user-buttons">
-            <%= link_to 'show', product %>
+          <p class="user-buttons"><%= link_to 'show', product %></p>
+<% end %>
             <% if (signed_in? && current_user.admin?) %>
-              <p class="user-buttons">
+              <div class="user-buttons">
                 <%= link_to 'edit', edit_product_path(product) %>
                 <%= link_to 'destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-              </p>
+              </div>
             <% end %>
-          </p>
         </div>
       </div>
     </div>
   </div>
-<% end %>
