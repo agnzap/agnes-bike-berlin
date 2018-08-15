@@ -9,10 +9,10 @@
           <p class="user-buttons">
             <%= link_to 'show', product %>
             <% if (signed_in? && current_user.admin?) %>
-
-              <%= link_to 'edit', edit_product_path(product) %>
-              <%= link_to 'destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-              
+              <p class="user-buttons">
+                <%= link_to 'edit', edit_product_path(product) %>
+                <%= link_to 'destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+              </p>
             <% end %>
           </p>
         </div>
