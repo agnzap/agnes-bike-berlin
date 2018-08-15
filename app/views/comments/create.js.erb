@@ -1,8 +1,6 @@
 $("#new_comment").html("<p>Thank you for your review!</p>");
 $("#new_comment").fadeOut(1400);
 
-$('.product-reviews').prepend("<%= j render @comment %>");
-
 $("#average-rating").attr('data-score', "<%= @product.average_rating %>");
 
 refreshRating();
