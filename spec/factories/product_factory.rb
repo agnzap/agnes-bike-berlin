@@ -2,9 +2,10 @@ FactoryBot.define do
   sequence(:name) { |n| "bike#{n}" }
 
   factory :product do
-    name
+    name "bike"
     description "bike description"
-    image_url "bike.jpg"
+    price 300
+    image_url "bike1.jpg"
   end
 
 end

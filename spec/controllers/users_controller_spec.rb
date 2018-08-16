@@ -12,7 +12,6 @@ describe UsersController, type: :controller do
         sign_in @user
       end
 
-
       it "loads correct user details" do
         get :show, params: {id: @user.id}
         expect(response).to be_ok
