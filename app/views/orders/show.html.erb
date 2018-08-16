@@ -2,6 +2,8 @@
   <br>
   <h4>Order Information</h4>
   <strong>Order ID: </strong><%= @order.id %><br>
+  <%= image_tag(@order.product.image_url, class: "img-responsive") %><br>
+  <br>
   <strong>Product Name: </strong><%= @order.product.name %><br>
   <strong>Product Price: </strong><%= number_to_currency(@order.product.price.to_i) %><br>
   <strong>Total Price: </strong><%= number_to_currency(@order.total.to_i) %><br>
