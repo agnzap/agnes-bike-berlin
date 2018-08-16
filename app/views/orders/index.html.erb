@@ -1,7 +1,7 @@
 <div class="wrapper">
   <br>
   <% @orders.each do |order| %>
-    <div class="col-sm">
+    <div class="orders">
       <h4>
         Order # <%= order.id %>:
         <%= link_to order.product.name, order %>

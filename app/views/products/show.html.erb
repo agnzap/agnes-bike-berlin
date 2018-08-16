@@ -35,15 +35,19 @@
     </div>
 
 
-      <div class="user-buttons">
-        <%= link_to 'edit', edit_product_path(@product) %> |
-        <%= link_to 'back', products_path %>
-      </div>
+
     </div>
   </div><!-- end row-->
-      <%= render 'new_comment' %>
-      <div class="alert alert-info wrapper" style="display:none" role="alert">A new comment was posted!</div>
-      <%= render 'comments' %>
+  <div class="user-buttons">
+    <%= link_to 'edit', edit_product_path(@product) %> |
+    <%= link_to 'back', products_path %>
+  </div>
+  <br>
+  <br>
+
+  <%= render 'new_comment' %>
+    <div class="alert alert-info wrapper" style="display:none" role="alert">A new comment was posted!</div>
+    <%= render 'comments' %>
   <div class="user-buttons">
       <%= will_paginate @comments %>
   </div>
